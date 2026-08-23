@@ -1,0 +1,186 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.6;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+.section-label {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.section-heading {
+  margin-bottom: 55px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+.section-description {
+  max-width: 650px;
+  margin: 15px auto 0;
+  line-height: 1.7;
+  opacity: 0.65;
+}
+
+.about,
+.skills,
+.projects,
+.education,
+.achievements,
+.contact {
+  padding: 100px 8%;
+}
+
+@media (max-width: 768px) {
+  .about,
+  .skills,
+  .projects,
+  .education,
+  .achievements,
+  .contact {
+    padding: 70px 5%;
+  }
+}
+
+/* =========================
+   COMMON CARD STYLE
+========================= */
+
+.skill-card,
+.project-card,
+.education-card,
+.achievement-card,
+.focus-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.education-card:hover,
+.achievement-card:hover,
+.focus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .section-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .project-card p,
+  .education-content p,
+  .achievement-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    gap: 35px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth hover effects */
+
+a,
+button {
+  transition: all 0.25s ease;
+}
+
+
+/* Project / skill / achievement hover */
+
+.project-card,
+.skill-card,
+.achievement-card,
+.education-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover,
+.skill-card:hover,
+.achievement-card:hover,
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Button hover */
+
+.hero-buttons a:hover,
+.project-btn:hover,
+.contact-form button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+

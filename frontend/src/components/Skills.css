@@ -1,0 +1,51 @@
+.skills {
+  padding: 100px 8%;
+}
+
+.skills-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 30px;
+}
+
+.skill-card h3 {
+  margin: 0 0 20px;
+  font-size: 1.2rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-list span {
+  padding: 8px 14px;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: 0.25s ease;
+}
+
+.skill-list span:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 70px 5%;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
