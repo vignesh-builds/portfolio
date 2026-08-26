@@ -35,7 +35,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-            List.of("https://portfolio-frontend-evl.onrender.com")
+            List.of("https://portfolio-frontend-evvl.onrender.com")
         );
 
         configuration.setAllowedMethods(
