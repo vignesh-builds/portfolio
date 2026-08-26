@@ -23,7 +23,7 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
                 .requestMatchers("/contact").permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
             );
 
         return http.build();
