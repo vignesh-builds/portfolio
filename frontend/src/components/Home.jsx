@@ -30,7 +30,7 @@ function Home() {
           </a>
 
           <a
-            href=".\public\Vignesh-Resume.pdf"
+            href="\public\Vignesh-Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="secondary-btn"
