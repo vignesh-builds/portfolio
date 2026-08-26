@@ -14,7 +14,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8080/api/contact", {
+      const response = await fetch("https://portfolio-z2k5.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
