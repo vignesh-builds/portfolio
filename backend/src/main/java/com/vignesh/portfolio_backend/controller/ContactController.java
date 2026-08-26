@@ -1,6 +1,5 @@
 package com.vignesh.portfolio_backend.controller;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +10,6 @@ import com.vignesh.portfolio_backend.repository.ContactRepository;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin(origins = "https://portfolio-frontend-evvl.onrender.com")
 public class ContactController {
 
     private final ContactRepository contactRepository;
