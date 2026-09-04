@@ -10,21 +10,37 @@ function Contact() {
 
   const [status, setStatus] = useState("");
 
+  // Input field change
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.id]: e.target.value
+    });
+
+    // User starts typing → previous status message disappears
+    setStatus("");
+  };
+
+  // Form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://portfolio-z2k5.onrender.com/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
+      const response = await fetch(
+        "https://portfolio-z2k5.onrender.com/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(formData)
+        }
+      );
 
       if (response.ok) {
         setStatus("Message sent successfully!");
 
+        // Clear form after successful submission
         setFormData({
           name: "",
           email: "",
@@ -55,7 +71,6 @@ function Contact() {
           </p>
         </div>
 
-
         <div className="contact-content">
 
           {/* Contact Information */}
@@ -65,14 +80,13 @@ function Contact() {
               <span className="contact-label">Email</span>
 
               <a
-                href="mailto:vignesh.builds-email@gmail.com"
+                href="mailto:vignesh.builds@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 vignesh.builds@gmail.com
               </a>
             </div>
-
 
             <div className="contact-item">
               <span className="contact-label">GitHub</span>
@@ -85,7 +99,6 @@ function Contact() {
                 github.com/vignesh-builds
               </a>
             </div>
-
 
             <div className="contact-item">
               <span className="contact-label">LinkedIn</span>
@@ -101,13 +114,13 @@ function Contact() {
 
           </div>
 
-
           {/* Contact Form */}
           <form
             className="contact-form"
             onSubmit={handleSubmit}
           >
 
+            {/* Name */}
             <div className="form-group">
               <label htmlFor="name">Name</label>
 
@@ -116,17 +129,12 @@ function Contact() {
                 id="name"
                 placeholder="Your Name"
                 value={formData.name}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    name: e.target.value
-                  })
-                }
+                onChange={handleChange}
                 required
               />
             </div>
 
-
+            {/* Email */}
             <div className="form-group">
               <label htmlFor="email">Email</label>
 
@@ -135,17 +143,12 @@ function Contact() {
                 id="email"
                 placeholder="Your Email"
                 value={formData.email}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    email: e.target.value
-                  })
-                }
+                onChange={handleChange}
                 required
               />
             </div>
 
-
+            {/* Message */}
             <div className="form-group">
               <label htmlFor="message">Message</label>
 
@@ -154,26 +157,22 @@ function Contact() {
                 rows="5"
                 placeholder="Your Message"
                 value={formData.message}
-                onChange={(e) =>
-                  setFormData({
-                    ...formData,
-                    message: e.target.value
-                  })
-                }
+                onChange={handleChange}
                 required
               ></textarea>
             </div>
 
-
+            {/* Submit Button */}
             <button type="submit">
               Send Message
             </button>
 
+            {/* Status Message */}
             {status && (
               <p className="form-status">
                 {status}
               </p>
-)}
+            )}
 
           </form>
 
