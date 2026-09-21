@@ -4,12 +4,15 @@
 
 .contact {
   padding: 100px 8%;
-  background: #0F172A;
+  background-color: #0F172A !important;
+  background-image: none !important;
 }
 
 .contact-container {
   max-width: 1100px;
   margin: auto;
+  background-color: transparent !important;
+  background-image: none !important;
 }
 
 .contact-content {
@@ -17,19 +20,27 @@
   grid-template-columns: 0.8fr 1.2fr;
   gap: 70px;
   align-items: start;
+  background-color: transparent !important;
+  background-image: none !important;
 }
+
+
+/* =========================
+   CONTACT INFO
+========================= */
 
 .contact-info {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  background-color: transparent !important;
 }
 
 .contact-item {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  background: #0F172A;
+  background-color: transparent !important;
 }
 
 .contact-label {
@@ -37,54 +48,66 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #F8FAFC;
-  opacity: 1;
+
+  color: #F8FAFC !important;
+  opacity: 1 !important;
 }
 
 .contact-item a {
   text-decoration: none;
   font-size: 0.95rem;
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 }
 
 .contact-item a:hover {
   text-decoration: underline;
-  color: #38BDF8;
+  color: #38BDF8 !important;
 }
 
 
 /* =========================
-   FORM
+   CONTACT FORM
 ========================= */
 
-.contact-form {
+.contact-form,
+form.contact-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 
-  /* SAME NAVY */
-  background: #0F172A;
+  background-color: #0F172A !important;
+  background: #0F172A !important;
+  background-image: none !important;
+
+  box-shadow: none !important;
 }
+
+
+/* =========================
+   FORM GROUP
+========================= */
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 7px;
 
-  /* SAME NAVY */
-  background: #0F172A;
+  background-color: #0F172A !important;
+  background: #0F172A !important;
+  background-image: none !important;
 }
 
 .form-group label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #F8FAFC;
-  opacity: 1;
+
+  color: #F8FAFC !important;
+  opacity: 1 !important;
 }
 
 
 /* =========================
-   INPUTS
+   INPUT + TEXTAREA
 ========================= */
 
 .form-group input,
@@ -99,21 +122,27 @@
   font-size: 0.95rem;
   resize: vertical;
 
-  /* NAVY */
-  background: #0F172A;
-  color: #F8FAFC;
+  background-color: #0F172A !important;
+  background: #0F172A !important;
+  background-image: none !important;
+
+  color: #F8FAFC !important;
+
+  box-shadow: none;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #CBD5E1;
-  opacity: 1;
+  color: #CBD5E1 !important;
+  opacity: 1 !important;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #38BDF8;
-  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.12);
+  border-color: #38BDF8 !important;
+
+  box-shadow:
+    0 0 0 2px rgba(56, 189, 248, 0.12) !important;
 }
 
 
@@ -129,8 +158,10 @@
   border: none;
   border-radius: 8px;
 
-  background: #2563EB;
-  color: #F8FAFC;
+  background-color: #2563EB !important;
+  background: #2563EB !important;
+
+  color: #F8FAFC !important;
 
   font-size: 0.9rem;
   font-weight: 600;
@@ -141,19 +172,24 @@
 
 .contact-form button:hover {
   transform: translateY(-2px);
-  background: #1D4ED8;
+
+  background-color: #1D4ED8 !important;
+  background: #1D4ED8 !important;
 }
 
 
 /* =========================
-   STATUS
+   FORM STATUS
 ========================= */
 
 .form-status {
   margin-top: 15px;
   font-size: 14px;
   font-weight: 500;
-  color: #38BDF8;
+
+  color: #38BDF8 !important;
+
+  background-color: transparent !important;
 }
 
 
