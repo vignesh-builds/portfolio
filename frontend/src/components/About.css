@@ -1,5 +1,10 @@
+/* =========================
+   ABOUT
+========================= */
+
 .about {
   padding: 100px 8%;
+  background: #0F172A;
 }
 
 .about-container {
@@ -15,6 +20,7 @@
   margin: 0;
   font-size: 2.6rem;
   line-height: 1.2;
+  color: #F8FAFC;
 }
 
 .about-content {
@@ -28,7 +34,8 @@
   margin: 0 0 22px;
   font-size: 1.05rem;
   line-height: 1.85;
-  opacity: 0.7;
+  color: #CBD5E1;
+  opacity: 1;
 }
 
 .about-focus {
@@ -39,6 +46,12 @@
 
 .focus-card {
   padding: 24px;
+
+  background: #1E293B;
+
+  border: 1px solid #334155;
+
+  border-radius: 12px;
 }
 
 .focus-number {
@@ -46,22 +59,31 @@
   margin-bottom: 12px;
   font-size: 0.8rem;
   font-weight: 700;
-  opacity: 0.45;
+
+  color: #38BDF8;
+
+  opacity: 1;
 }
 
 .focus-card h3 {
   margin: 0 0 8px;
   font-size: 1.1rem;
+
+  color: #F8FAFC;
 }
 
 .focus-card p {
   margin: 0;
   font-size: 0.9rem;
   line-height: 1.6;
-  opacity: 0.6;
+
+  color: #CBD5E1;
+
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
+
   .about {
     padding: 70px 5%;
   }
@@ -70,43 +92,4 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-}
-
-/* =========================================
-   ABOUT - DARK NAVY + SKY BLUE
-   COLOR ONLY
-========================================= */
-
-.about {
-  background: #0F172A;
-}
-
-.about-card {
-  background: #1E293B !important;
-  border-color: #334155;
-}
-
-.about-card h3 {
-  color: #F8FAFC;
-}
-
-.about-card span {
-  color: #38BDF8;
-}
-
-.about-text h2 {
-  color: #F8FAFC;
-}
-
-.about-text h2 span {
-  color: #38BDF8;
-}
-
-.about-text p {
-  color: #CBD5E1;
-}
-
-.about-highlight {
-  background: rgba(56, 189, 248, 0.10);
-  color: #38BDF8;
 }
