@@ -213,6 +213,42 @@
   background: #1D4ED8 !important;
 }
 
+/* =========================================
+   CONTACT - SAME LABEL COLOR
+========================================= */
+
+.contact .form-group label,
+.contact .form-group input,
+.contact .form-group textarea {
+  color: #F8FAFC !important;
+}
+
+.contact .form-group label {
+  opacity: 1 !important;
+}
+
+/* Input placeholder same light color */
+.contact .form-group input::placeholder,
+.contact .form-group textarea::placeholder {
+  color: #CBD5E1 !important;
+  opacity: 1 !important;
+}
+
+/* Email / Github / LinkedIn text */
+.contact .contact-label {
+  color: #CBD5E1 !important;
+}
+
+.contact .contact-item a {
+  color: #F8FAFC !important;
+}
+
+/* Button */
+.contact .contact-form button {
+  background: #2563EB !important;
+  color: #F8FAFC !important;
+}
+
 
 /* STATUS */
 
