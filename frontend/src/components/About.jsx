@@ -53,7 +53,7 @@ function About() {
               <span className="focus-number">03</span>
               <h3>Database & Tools</h3>
               <p>
-                PostgreSQL · MySQL · Git · GitHub · Postman
+                PostgreSQL · Vscode · Git · GitHub · Postman
               </p>
             </div>
 
