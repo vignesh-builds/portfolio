@@ -2,8 +2,11 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid #eee;
+
+  /* COLOR ONLY */
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid #334155;
+
   backdrop-filter: blur(10px);
 }
 
@@ -18,7 +21,10 @@
 
 .logo {
   text-decoration: none;
-  color: #111;
+
+  /* COLOR ONLY */
+  color: #F8FAFC;
+
   font-size: 1.4rem;
   font-weight: 700;
 }
@@ -31,14 +37,19 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
+
+  /* COLOR ONLY */
+  color: #CBD5E1;
+
   font-size: 0.95rem;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #000;
+
+  /* COLOR ONLY */
+  color: #38BDF8;
 }
 
 @media (max-width: 900px) {
@@ -49,10 +60,16 @@
 
 .menu-button {
   display: none;
+
+  /* COLOR ONLY */
   background: none;
+
   border: none;
+
   font-size: 1.8rem;
   cursor: pointer;
+
+  color: #F8FAFC;
 }
 
 @media (max-width: 900px) {
@@ -68,8 +85,11 @@
     left: 0;
     width: 100%;
     padding: 20px;
-    background: white;
-    border-bottom: 1px solid #eee;
+
+    /* COLOR ONLY */
+    background: #0F172A;
+    border-bottom: 1px solid #334155;
+
     flex-direction: column;
     gap: 20px;
   }
