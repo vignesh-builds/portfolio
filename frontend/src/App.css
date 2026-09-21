@@ -183,3 +183,243 @@ button {
     animation: none !important;
   }
 }
+
+/* =========================================
+   DARK NAVY + SKY BLUE THEME
+   COLOR ONLY — NO SIZE CHANGES
+========================================= */
+
+body {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+
+/* Section backgrounds */
+
+.about,
+.skills,
+.projects,
+.education,
+.achievements,
+.contact {
+  background: #0f172a !important;
+}
+
+
+/* Main text */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f8fafc;
+}
+
+
+/* Secondary text */
+
+p {
+  color: #cbd5e1;
+}
+
+
+/* Section titles */
+
+.section-title {
+  color: #f8fafc;
+}
+
+.section-title span {
+  color: #38bdf8;
+}
+
+
+/* Cards */
+
+.skill-card,
+.project-card,
+.education-card,
+.achievement-card,
+.contact-form,
+.about-card {
+  background: #1e293b !important;
+
+  border-color: #334155;
+}
+
+
+/* Card headings */
+
+.skill-card h3,
+.project-card h3,
+.education-card h3,
+.achievement-card h3,
+.contact-info h3,
+.about-text h2 {
+  color: #f8fafc;
+}
+
+
+/* Card paragraph */
+
+.skill-card p,
+.project-card p,
+.education-card p,
+.achievement-card p,
+.about-text p,
+.contact-info p {
+  color: #cbd5e1;
+}
+
+
+/* Cyan highlights */
+
+.skill-card h3 span,
+.about-text h2 span,
+.education-card h4 {
+  color: #38bdf8;
+}
+
+
+/* Tags */
+
+.skill-list span,
+.project-tech span,
+.education-year,
+.hero-tech span {
+  background: rgba(56, 189, 248, 0.10);
+
+  border-color: rgba(56, 189, 248, 0.35);
+
+  color: #38bdf8;
+}
+
+
+/* Buttons */
+
+.primary-btn,
+.project-links a,
+.contact-form button {
+  background: #2563eb;
+
+  border-color: #2563eb;
+
+  color: #f8fafc;
+}
+
+.primary-btn:hover,
+.project-links a:hover,
+.contact-form button:hover {
+  background: #1d4ed8;
+}
+
+
+/* Secondary buttons */
+
+.secondary-btn {
+  background: #1e293b;
+
+  border-color: #475569;
+
+  color: #f8fafc;
+}
+
+.secondary-btn:hover {
+  border-color: #38bdf8;
+
+  color: #38bdf8;
+}
+
+
+/* Contact inputs */
+
+.form-group input,
+.form-group textarea {
+  background: #0f172a;
+
+  border-color: #475569;
+
+  color: #f8fafc;
+}
+
+.form-group label {
+  color: #cbd5e1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 0 0 3px rgba(56, 189, 248, 0.12);
+}
+
+
+/* Navbar */
+
+.navbar {
+  background: rgba(15, 23, 42, 0.96);
+
+  border-color: #334155;
+}
+
+.logo {
+  color: #f8fafc;
+}
+
+.logo::after {
+  color: #38bdf8;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.nav-links a::after {
+  background: #38bdf8;
+}
+
+
+/* Footer */
+
+.footer {
+  background: #020617;
+}
+
+.footer-main {
+  border-color: #334155;
+}
+
+.footer-main p {
+  color: #94a3b8;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
