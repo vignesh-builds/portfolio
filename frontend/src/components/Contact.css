@@ -29,6 +29,7 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+  background: #0F172A;
 }
 
 .contact-label {
@@ -53,21 +54,25 @@
 
 
 /* =========================
-   CONTACT FORM
+   FORM
 ========================= */
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  background: #1E293B;
-  padding: 0;
+
+  /* SAME NAVY */
+  background: #0F172A;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 7px;
+
+  /* SAME NAVY */
+  background: #0F172A;
 }
 
 .form-group label {
@@ -94,6 +99,7 @@
   font-size: 0.95rem;
   resize: vertical;
 
+  /* NAVY */
   background: #0F172A;
   color: #F8FAFC;
 }
@@ -140,7 +146,7 @@
 
 
 /* =========================
-   FORM STATUS
+   STATUS
 ========================= */
 
 .form-status {
