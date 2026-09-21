@@ -36,7 +36,7 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #CBD5E1;
+  color: #F8FAFC;
   opacity: 1;
 }
 
@@ -51,11 +51,15 @@
   color: #38BDF8;
 }
 
+
+/* =========================
+   CONTACT FORM
+========================= */
+
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
-
   background: #1E293B;
   padding: 0;
 }
@@ -70,7 +74,13 @@
   font-size: 0.85rem;
   font-weight: 600;
   color: #F8FAFC;
+  opacity: 1;
 }
+
+
+/* =========================
+   INPUTS
+========================= */
 
 .form-group input,
 .form-group textarea {
@@ -90,19 +100,26 @@
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #64748B;
+  color: #CBD5E1;
+  opacity: 1;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: #38BDF8;
-
   box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.12);
 }
 
+
+/* =========================
+   BUTTON
+========================= */
+
 .contact-form button {
   align-self: flex-start;
+
   padding: 12px 24px;
+
   border: none;
   border-radius: 8px;
 
@@ -111,6 +128,7 @@
 
   font-size: 0.9rem;
   font-weight: 600;
+
   cursor: pointer;
   transition: 0.25s ease;
 }
@@ -120,7 +138,25 @@
   background: #1D4ED8;
 }
 
+
+/* =========================
+   FORM STATUS
+========================= */
+
+.form-status {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #38BDF8;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
   .contact {
     padding: 70px 5%;
   }
@@ -133,125 +169,4 @@
   .contact-form button {
     width: 100%;
   }
-}
-
-.form-status {
-  margin-top: 15px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #38BDF8;
-}
-
-/* =========================================
-   CONTACT COLOR OVERRIDE
-   COLOR ONLY
-========================================= */
-
-.contact {
-  background: #0F172A !important;
-}
-
-.contact-container {
-  background: transparent !important;
-}
-
-.contact-item {
-  background: transparent !important;
-}
-
-.contact-label {
-  color: #CBD5E1 !important;
-  opacity: 1 !important;
-}
-
-.contact-item a {
-  color: #F8FAFC !important;
-}
-
-.contact-item a:hover {
-  color: #38BDF8 !important;
-}
-
-
-/* FORM */
-
-.contact-form {
-  background: #1E293B !important;
-}
-
-.form-group label {
-  color: #F8FAFC !important;
-}
-
-.form-group input,
-.form-group textarea {
-  background: #0F172A !important;
-  color: #F8FAFC !important;
-  border-color: #475569 !important;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #64748B !important;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #38BDF8 !important;
-}
-
-
-/* BUTTON */
-
-.contact-form button {
-  background: #2563EB !important;
-  color: #F8FAFC !important;
-  border-color: #2563EB !important;
-}
-
-.contact-form button:hover {
-  background: #1D4ED8 !important;
-}
-
-/* =========================================
-   CONTACT - SAME LABEL COLOR
-========================================= */
-
-.contact .form-group label,
-.contact .form-group input,
-.contact .form-group textarea {
-  color: #F8FAFC !important;
-}
-
-.contact .form-group label {
-  opacity: 1 !important;
-}
-
-/* Input placeholder same light color */
-.contact .form-group input::placeholder,
-.contact .form-group textarea::placeholder {
-  color: #CBD5E1 !important;
-  opacity: 1 !important;
-}
-
-/* Email / Github / LinkedIn text */
-.contact .contact-label {
-  color: #CBD5E1 !important;
-}
-
-.contact .contact-item a {
-  color: #F8FAFC !important;
-}
-
-/* Button */
-.contact .contact-form button {
-  background: #2563EB !important;
-  color: #F8FAFC !important;
-}
-
-
-/* STATUS */
-
-.form-status {
-  color: #38BDF8 !important;
 }
