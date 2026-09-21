@@ -184,3 +184,32 @@ button {
   }
 }
 
+/* =========================================
+   SAME BACKGROUND FOR ALL SECTIONS
+========================================= */
+
+.about,
+.skills,
+.projects,
+.education,
+.achievements,
+.contact {
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(6, 182, 212, 0.10),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 25%,
+      rgba(8, 145, 178, 0.07),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f8fafc 0%,
+      #f1f9fb 50%,
+      #ffffff 100%
+    ) !important;
+}
+
