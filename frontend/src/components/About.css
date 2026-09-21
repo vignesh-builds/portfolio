@@ -71,3 +71,42 @@
     gap: 40px;
   }
 }
+
+/* =========================================
+   ABOUT - DARK NAVY + SKY BLUE
+   COLOR ONLY
+========================================= */
+
+.about {
+  background: #0F172A;
+}
+
+.about-card {
+  background: #1E293B !important;
+  border-color: #334155;
+}
+
+.about-card h3 {
+  color: #F8FAFC;
+}
+
+.about-card span {
+  color: #38BDF8;
+}
+
+.about-text h2 {
+  color: #F8FAFC;
+}
+
+.about-text h2 span {
+  color: #38BDF8;
+}
+
+.about-text p {
+  color: #CBD5E1;
+}
+
+.about-highlight {
+  background: rgba(56, 189, 248, 0.10);
+  color: #38BDF8;
+}
