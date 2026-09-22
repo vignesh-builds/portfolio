@@ -110,3 +110,59 @@
     gap: 15px;
   }
 }
+
+/* =========================
+   EDUCATION - FINAL COLOR FIX
+   SIZE / STRUCTURE UNCHANGED
+========================= */
+
+.education {
+  background: #0F172A !important;
+  color: #F8FAFC !important;
+}
+
+.education-card {
+  background: #0F172A !important;
+  border: 1px solid #334155 !important;
+  color: #F8FAFC !important;
+}
+
+/* Remove different color from year area */
+.education-year {
+  background: #0F172A !important;
+  color: #38BDF8 !important;
+}
+
+/* Text */
+.education-content h3 {
+  color: #F8FAFC !important;
+}
+
+.education-content h4 {
+  color: #CBD5E1 !important;
+}
+
+.education-content p {
+  color: #CBD5E1 !important;
+}
+
+/* Tags */
+.education-focus span {
+  background: #0F172A !important;
+  border: 1px solid #38BDF8 !important;
+  color: #38BDF8 !important;
+}
+
+/* Heading */
+.education .section-label {
+  color: #94A3B8 !important;
+}
+
+.education .section-heading h2 {
+  color: #F8FAFC !important;
+}
+
+/* Hover */
+.education-card:hover {
+  border-color: #38BDF8 !important;
+}
