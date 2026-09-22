@@ -16,24 +16,28 @@
    HEADING
 ========================= */
 
-.skills-heading {
+.skills .section-heading {
   margin-bottom: 50px;
 }
 
-.skills-heading p {
+.skills .section-label {
   margin: 0 0 12px;
+
+  color: #64748B;
+
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #94A3B8;
 }
 
-.skills-heading h2 {
+.skills .section-heading h2 {
   margin: 0;
+
+  color: #F8FAFC;
+
   font-size: 2.6rem;
   line-height: 1.2;
-  color: #F8FAFC;
 }
 
 /* =========================
@@ -42,7 +46,7 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 
@@ -53,12 +57,14 @@
 .skill-card {
   padding: 38px;
 
-  background: #0F172A;
+  background: #1E293B;
 
   border: 1px solid #334155;
   border-radius: 16px;
 
   color: #F8FAFC;
+
+  transition: 0.25s ease;
 }
 
 /* =========================
@@ -68,33 +74,40 @@
 .skill-card h3 {
   margin: 0 0 28px;
 
-  font-size: 1.3rem;
   color: #F8FAFC;
+
+  font-size: 1.3rem;
+}
+
+/* =========================
+   SKILL LIST
+========================= */
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* =========================
    SKILL TAGS
 ========================= */
 
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.skill-tags span {
+.skill-list span {
   display: inline-block;
 
   padding: 8px 16px;
 
-  border: 1px solid #38BDF8;
-  border-radius: 25px;
-
   background: transparent;
+
+  border: 1px solid #CBD5E1;
+  border-radius: 25px;
 
   color: #38BDF8;
 
   font-size: 0.9rem;
+
+  white-space: nowrap;
 }
 
 /* =========================
@@ -103,10 +116,12 @@
 
 .skill-card:hover {
   border-color: #38BDF8;
+  transform: translateY(-2px);
 }
 
-.skill-tags span:hover {
-  background: rgba(56, 189, 248, 0.10);
+.skill-list span:hover {
+  background: rgba(56, 189, 248, 0.08);
+  border-color: #38BDF8;
 }
 
 /* =========================
@@ -122,5 +137,9 @@
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .skill-card {
+    padding: 30px;
   }
 }
