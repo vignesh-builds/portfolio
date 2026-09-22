@@ -4,12 +4,14 @@
 
 .hero {
   min-height: 78vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 70px 8%;
 
-  background: #0F172A;
+  background: #0F172A !important;
 }
 
 .hero-content {
@@ -17,115 +19,180 @@
   text-align: center;
 }
 
+/* =========================
+   SMALL TEXT
+========================= */
+
 .hero-small {
   margin: 0 0 8px;
+
+  color: #38BDF8 !important;
+
   font-size: 1rem;
   font-weight: 500;
 
-  color: #38BDF8;
   opacity: 1;
 }
+
+/* =========================
+   NAME
+========================= */
 
 .hero h1 {
   margin: 0;
+
+  color: #F8FAFC !important;
+
   font-size: clamp(3.5rem, 8vw, 6rem);
   line-height: 1;
   font-weight: 700;
-  letter-spacing: -3px;
 
-  color: #F8FAFC;
+  letter-spacing: -3px;
 }
+
+/* =========================
+   ROLE
+========================= */
 
 .hero h2 {
   margin: 22px 0 18px;
+
+  color: #F8FAFC !important;
+
   font-size: clamp(1.5rem, 3vw, 2.2rem);
   line-height: 1.3;
   font-weight: 600;
-
-  color: #F8FAFC;
 }
 
 .hero h2 span {
-  color: #38BDF8;
+  color: #38BDF8 !important;
   opacity: 1;
 }
+
+/* =========================
+   DESCRIPTION
+========================= */
 
 .hero-description {
   max-width: 650px;
+
   margin: 0 auto 32px;
+
+  color: #CBD5E1 !important;
+
   font-size: 1.05rem;
   line-height: 1.8;
 
-  color: #CBD5E1;
   opacity: 1;
 }
+
+/* =========================
+   BUTTONS
+========================= */
 
 .hero-buttons {
   display: flex;
   justify-content: center;
   gap: 14px;
+
   margin-bottom: 35px;
 }
 
 .hero-buttons a {
   display: inline-block;
+
   padding: 12px 24px;
+
   border-radius: 8px;
+
   text-decoration: none;
+
   font-size: 0.95rem;
   font-weight: 600;
+
   transition: all 0.25s ease;
 }
 
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
 .primary-btn {
-  background: #2563EB;
-  color: #F8FAFC;
-}
+  background: #2563EB !important;
+  color: #F8FAFC !important;
 
-.secondary-btn {
-  border: 1px solid #475569;
-  color: #F8FAFC;
-  background: #1E293B;
-}
-
-.primary-btn:hover,
-.secondary-btn:hover {
-  transform: translateY(-3px);
+  border: 1px solid #2563EB !important;
 }
 
 .primary-btn:hover {
-  background: #1D4ED8;
+  background: #1D4ED8 !important;
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+   SECONDARY BUTTON
+   SAME NAVY AS BACKGROUND
+========================= */
+
+.secondary-btn {
+  background: #0F172A !important;
+
+  color: #F8FAFC !important;
+
+  border: 1px solid #475569 !important;
 }
 
 .secondary-btn:hover {
-  border-color: #38BDF8;
-  color: #38BDF8;
+  background: #0F172A !important;
+
+  color: #38BDF8 !important;
+
+  border-color: #38BDF8 !important;
+
+  transform: translateY(-3px);
 }
+
+/* =========================
+   TECHNOLOGY TAGS
+========================= */
 
 .hero-tech {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
   flex-wrap: wrap;
+
   gap: 10px;
 }
 
 .hero-tech span {
   padding: 7px 14px;
-  border: 1px solid #38BDF8;
-  border-radius: 20px;
-  font-size: 0.85rem;
 
-  color: #38BDF8;
-  background: rgba(56, 189, 248, 0.08);
+  background: #0F172A !important;
+
+  border: 1px solid #38BDF8 !important;
+
+  border-radius: 20px;
+
+  color: #38BDF8 !important;
+
+  font-size: 0.85rem;
 
   opacity: 1;
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 600px) {
 
   .hero {
     min-height: calc(100vh - 65px);
+
     padding: 60px 5%;
   }
 
@@ -139,11 +206,13 @@
 
   .hero-buttons {
     flex-direction: column;
+
     align-items: center;
   }
 
   .hero-buttons a {
     width: 180px;
+
     text-align: center;
   }
 
