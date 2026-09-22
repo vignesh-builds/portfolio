@@ -1,5 +1,10 @@
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
 .achievements {
   padding: 100px 8%;
+  background: #0F172A;
 }
 
 .achievements-container {
@@ -7,58 +12,169 @@
   margin: auto;
 }
 
+/* =========================
+   HEADING
+========================= */
+
+.achievements-heading {
+  margin-bottom: 50px;
+}
+
+.achievements-heading p {
+  margin: 0 0 12px;
+
+  color: #94A3B8;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.achievements-heading h2 {
+  margin: 0;
+
+  color: #F8FAFC;
+
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.achievements-description {
+  margin: 0 auto 70px;
+
+  max-width: 850px;
+
+  color: #94A3B8;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  text-align: center;
+}
+
+/* =========================
+   GRID
+========================= */
+
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 
+/* =========================
+   CARD
+========================= */
+
 .achievement-card {
-  padding: 30px;
+  padding: 38px;
+
+  background: #0F172A !important;
+
+  border: 1px solid #334155;
+  border-radius: 16px;
+
+  color: #F8FAFC;
 }
+
+/* =========================
+   NUMBER
+========================= */
 
 .achievement-number {
   display: block;
-  margin-bottom: 25px;
-  font-size: 0.8rem;
+
+  margin-bottom: 40px;
+
+  color: #64748B;
+
+  font-size: 0.85rem;
   font-weight: 700;
-  opacity: 0.45;
 }
 
+/* =========================
+   TITLE
+========================= */
+
 .achievement-card h3 {
-  margin: 0 0 12px;
+  margin: 0 0 20px;
+
+  color: #F8FAFC;
+
   font-size: 1.25rem;
 }
 
+/* =========================
+   TEXT
+========================= */
+
 .achievement-card p {
-  margin: 0;
-  line-height: 1.7;
+  margin: 0 0 28px;
+
+  color: #94A3B8;
+
   font-size: 0.95rem;
-  opacity: 0.65;
+  line-height: 1.8;
 }
+
+/* =========================
+   TAGS
+========================= */
 
 .achievement-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 22px;
+  gap: 10px;
 }
 
 .achievement-tags span {
-  padding: 6px 10px;
-  border: 1px solid #e1e1e1;
+  padding: 8px 13px;
+
+  background: transparent !important;
+
+  border: 1px solid #38BDF8;
   border-radius: 20px;
-  font-size: 0.78rem;
+
+  color: #38BDF8;
+
+  font-size: 0.8rem;
 }
 
+/* =========================
+   HOVER
+========================= */
+
+.achievement-card:hover {
+  border-color: #38BDF8;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 900px) {
+
   .achievements-grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
   .achievements {
     padding: 70px 5%;
+  }
+
+  .achievements-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .achievements-description {
+    margin-bottom: 45px;
   }
 }
