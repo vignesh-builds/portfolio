@@ -12,16 +12,33 @@
   margin: auto;
 }
 
+/* =========================
+   HEADING
+========================= */
+
 .about-heading {
   margin-bottom: 50px;
 }
 
+.about-heading .section-label {
+  margin: 0 0 12px;
+  color: #64748B;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .about-heading h2 {
   margin: 0;
+  color: #F8FAFC !important;
   font-size: 2.6rem;
   line-height: 1.2;
-  color: #F8FAFC !important;
 }
+
+/* =========================
+   CONTENT
+========================= */
 
 .about-content {
   display: grid;
@@ -30,63 +47,101 @@
   align-items: start;
 }
 
+/* =========================
+   ABOUT TEXT
+========================= */
+
 .about-text p {
   margin: 0 0 22px;
+
+  color: #CBD5E1 !important;
+
   font-size: 1.05rem;
   line-height: 1.85;
-  color: #CBD5E1 !important;
+
   opacity: 1;
 }
+
+/* =========================
+   FOCUS
+========================= */
 
 .about-focus {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
-
 
 /* =========================
    FOCUS CARDS
+   FULL NAVY COLOR
 ========================= */
 
 .about .focus-card {
   padding: 24px;
 
-  background: #1E293B !important;
+  background: #0F172A !important;
 
   border: 1px solid #334155 !important;
+  border-radius: 16px;
 
   color: #F8FAFC !important;
+
+  transition: 0.25s ease;
 }
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.about .focus-card:hover {
+  border-color: #38BDF8 !important;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   NUMBER
+========================= */
 
 .about .focus-number {
   display: block;
+
   margin-bottom: 12px;
-  font-size: 0.8rem;
-  font-weight: 700;
 
   color: #38BDF8 !important;
 
+  font-size: 0.8rem;
+  font-weight: 700;
+
   opacity: 1;
 }
+
+/* =========================
+   CARD TITLE
+========================= */
 
 .about .focus-card h3 {
   margin: 0 0 8px;
-  font-size: 1.1rem;
 
   color: #F8FAFC !important;
+
+  font-size: 1.1rem;
 }
+
+/* =========================
+   CARD TEXT
+========================= */
 
 .about .focus-card p {
   margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.6;
 
   color: #CBD5E1 !important;
 
+  font-size: 0.9rem;
+  line-height: 1.6;
+
   opacity: 1;
 }
-
 
 /* =========================
    MOBILE
@@ -101,5 +156,9 @@
   .about-content {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .about-heading h2 {
+    font-size: 2.2rem;
   }
 }
