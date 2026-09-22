@@ -4,26 +4,29 @@
 
 .achievements {
   padding: 100px 8%;
-  background: #0F172A;
+  background: #0F172A !important;
+  color: #F8FAFC !important;
 }
 
 .achievements-container {
   max-width: 1100px;
   margin: auto;
+  background: transparent !important;
 }
 
 /* =========================
    HEADING
 ========================= */
 
-.achievements-heading {
+.section-heading {
   margin-bottom: 50px;
+  background: transparent !important;
 }
 
-.achievements-heading p {
+.section-label {
   margin: 0 0 12px;
 
-  color: #94A3B8;
+  color: #94A3B8 !important;
 
   font-size: 0.85rem;
   font-weight: 700;
@@ -31,10 +34,10 @@
   text-transform: uppercase;
 }
 
-.achievements-heading h2 {
+.section-heading h2 {
   margin: 0;
 
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 
   font-size: 2.6rem;
   line-height: 1.2;
@@ -44,17 +47,19 @@
    DESCRIPTION
 ========================= */
 
-.achievements-description {
+.section-description {
   margin: 0 auto 70px;
 
   max-width: 850px;
 
-  color: #94A3B8;
+  color: #CBD5E1 !important;
 
   font-size: 1.05rem;
   line-height: 1.8;
 
   text-align: center;
+
+  background: transparent !important;
 }
 
 /* =========================
@@ -65,6 +70,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  background: transparent !important;
 }
 
 /* =========================
@@ -74,12 +80,13 @@
 .achievement-card {
   padding: 38px;
 
+  /* FULL NAVY */
   background: #0F172A !important;
 
-  border: 1px solid #334155;
+  border: 1px solid #334155 !important;
   border-radius: 16px;
 
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 }
 
 /* =========================
@@ -91,7 +98,7 @@
 
   margin-bottom: 40px;
 
-  color: #64748B;
+  color: #64748B !important;
 
   font-size: 0.85rem;
   font-weight: 700;
@@ -104,7 +111,7 @@
 .achievement-card h3 {
   margin: 0 0 20px;
 
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 
   font-size: 1.25rem;
 }
@@ -116,7 +123,7 @@
 .achievement-card p {
   margin: 0 0 28px;
 
-  color: #94A3B8;
+  color: #CBD5E1 !important;
 
   font-size: 0.95rem;
   line-height: 1.8;
@@ -130,6 +137,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+
+  background: transparent !important;
 }
 
 .achievement-tags span {
@@ -137,10 +146,10 @@
 
   background: transparent !important;
 
-  border: 1px solid #38BDF8;
+  border: 1px solid #38BDF8 !important;
   border-radius: 20px;
 
-  color: #38BDF8;
+  color: #38BDF8 !important;
 
   font-size: 0.8rem;
 }
@@ -150,7 +159,8 @@
 ========================= */
 
 .achievement-card:hover {
-  border-color: #38BDF8;
+  background: #0F172A !important;
+  border-color: #38BDF8 !important;
 }
 
 /* =========================
@@ -170,11 +180,11 @@
     padding: 70px 5%;
   }
 
-  .achievements-heading h2 {
+  .section-heading h2 {
     font-size: 2.2rem;
   }
 
-  .achievements-description {
+  .section-description {
     margin-bottom: 45px;
   }
 }
