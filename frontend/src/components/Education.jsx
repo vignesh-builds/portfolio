@@ -1,4 +1,3 @@
-import "./Education.css"
 import "./Education.css";
 
 function Education() {
