@@ -12,8 +12,21 @@
   margin: auto;
 }
 
+/* =========================
+   HEADING
+========================= */
+
 .skills-heading {
   margin-bottom: 50px;
+}
+
+.skills-heading p {
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #94A3B8;
 }
 
 .skills-heading h2 {
@@ -23,13 +36,8 @@
   color: #F8FAFC;
 }
 
-.skills-heading p {
-  color: #CBD5E1;
-}
-
-
 /* =========================
-   SKILLS GRID
+   GRID
 ========================= */
 
 .skills-grid {
@@ -38,9 +46,8 @@
   gap: 25px;
 }
 
-
 /* =========================
-   SKILL CARD
+   CARD
 ========================= */
 
 .skill-card {
@@ -54,7 +61,6 @@
   color: #F8FAFC;
 }
 
-
 /* =========================
    CARD TITLE
 ========================= */
@@ -62,11 +68,9 @@
 .skill-card h3 {
   margin: 0 0 28px;
 
-  color: #F8FAFC;
-
   font-size: 1.3rem;
+  color: #F8FAFC;
 }
-
 
 /* =========================
    SKILL TAGS
@@ -79,6 +83,8 @@
 }
 
 .skill-tags span {
+  display: inline-block;
+
   padding: 8px 16px;
 
   border: 1px solid #38BDF8;
@@ -90,7 +96,6 @@
 
   font-size: 0.9rem;
 }
-
 
 /* =========================
    HOVER
@@ -104,7 +109,6 @@
   background: rgba(56, 189, 248, 0.10);
 }
 
-
 /* =========================
    MOBILE
 ========================= */
@@ -117,5 +121,6 @@
 
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
