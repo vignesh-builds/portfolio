@@ -39,7 +39,7 @@ function Projects() {
             </div>
 
             <div className="project-links">
-              <a href="https://github.com/vignesh-builds" 
+              <a href="https://github.com/vignesh-builds/hospital-management" 
               target="_blank"
               rel="noreferrer" className="project-btn">
                 GitHub
