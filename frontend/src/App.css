@@ -423,3 +423,238 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background: #38bdf8;
 }
+
+/* =========================
+   PROFESSIONAL WELCOME SCREEN
+========================= */
+
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0F172A;
+  overflow: hidden;
+
+  animation: welcomeExit 0.8s ease 2.6s forwards;
+}
+
+/* Soft background glow */
+
+.welcome-screen::before {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  filter: blur(80px);
+
+  animation: glowMove 3s ease-in-out infinite alternate;
+}
+
+/* Second glow */
+
+.welcome-screen::after {
+  content: "";
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  filter: blur(70px);
+
+  transform: translate(250px, 150px);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.welcome-content {
+  position: relative;
+  z-index: 2;
+
+  text-align: center;
+
+  animation: welcomeContent 1s ease;
+}
+
+
+/* Small top text */
+
+.welcome-content p {
+  margin: 0 0 18px;
+
+  color: #38BDF8;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  opacity: 0;
+
+  animation: slideDown 0.8s ease 0.2s forwards;
+}
+
+
+/* Main heading */
+
+.welcome-content h1 {
+  margin: 0;
+
+  color: #F8FAFC;
+
+  font-size: 3.5rem;
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  opacity: 0;
+
+  animation: slideUp 0.9s ease 0.4s forwards;
+}
+
+
+/* Developer text */
+
+.welcome-content span {
+  display: block;
+
+  margin-top: 18px;
+
+  color: #CBD5E1;
+
+  font-size: 1rem;
+
+  opacity: 0;
+
+  animation: slideUp 0.9s ease 0.7s forwards;
+}
+
+
+/* Cyan line */
+
+.welcome-content::after {
+  content: "";
+
+  display: block;
+
+  width: 0;
+  height: 3px;
+
+  margin: 28px auto 0;
+
+  border-radius: 10px;
+
+  background: #38BDF8;
+
+  animation: lineGrow 0.8s ease 1s forwards;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes welcomeContent {
+  from {
+    transform: scale(0.96);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lineGrow {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 70px;
+  }
+}
+
+@keyframes glowMove {
+  from {
+    transform: translate(-100px, -50px);
+  }
+
+  to {
+    transform: translate(100px, 50px);
+  }
+}
+
+@keyframes welcomeExit {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .welcome-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-content span {
+    font-size: 0.9rem;
+  }
+
+  .welcome-content p {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+  }
+}
