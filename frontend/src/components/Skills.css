@@ -4,7 +4,7 @@
 
 .skills {
   padding: 100px 8%;
-  background: #0F172A;
+  background: #0F172A !important;
 }
 
 .skills-container {
@@ -23,7 +23,7 @@
 .skills .section-label {
   margin: 0 0 12px;
 
-  color: #64748B;
+  color: #94A3B8 !important;
 
   font-size: 0.85rem;
   font-weight: 700;
@@ -34,7 +34,7 @@
 .skills .section-heading h2 {
   margin: 0;
 
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 
   font-size: 2.6rem;
   line-height: 1.2;
@@ -54,15 +54,16 @@
    CARD
 ========================= */
 
-.skill-card {
+.skills .skill-card {
   padding: 38px;
 
-  background: #1E293B;
+  /* FULL NAVY */
+  background: #0F172A !important;
 
-  border: 1px solid #334155;
+  border: 1px solid #334155 !important;
   border-radius: 16px;
 
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 
   transition: 0.25s ease;
 }
@@ -71,10 +72,10 @@
    CARD TITLE
 ========================= */
 
-.skill-card h3 {
+.skills .skill-card h3 {
   margin: 0 0 28px;
 
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 
   font-size: 1.3rem;
 }
@@ -83,7 +84,7 @@
    SKILL LIST
 ========================= */
 
-.skill-list {
+.skills .skill-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -93,35 +94,32 @@
    SKILL TAGS
 ========================= */
 
-.skill-list span {
+.skills .skill-list span {
   display: inline-block;
 
   padding: 8px 16px;
 
-  background: transparent;
+  background: transparent !important;
 
-  border: 1px solid #CBD5E1;
+  border: 1px solid #CBD5E1 !important;
   border-radius: 25px;
 
-  color: #38BDF8;
+  color: #38BDF8 !important;
 
   font-size: 0.9rem;
-
-  white-space: nowrap;
 }
 
 /* =========================
    HOVER
 ========================= */
 
-.skill-card:hover {
-  border-color: #38BDF8;
-  transform: translateY(-2px);
+.skills .skill-card:hover {
+  border-color: #38BDF8 !important;
+  transform: translateY(-3px);
 }
 
-.skill-list span:hover {
-  background: rgba(56, 189, 248, 0.08);
-  border-color: #38BDF8;
+.skills .skill-list span:hover {
+  background: rgba(56, 189, 248, 0.08) !important;
 }
 
 /* =========================
@@ -139,7 +137,7 @@
     gap: 20px;
   }
 
-  .skill-card {
-    padding: 30px;
+  .skills .skill-card {
+    padding: 28px;
   }
 }
