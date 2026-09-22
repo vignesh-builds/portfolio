@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar";
@@ -11,18 +12,41 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
+  const [showWelcome, setShowWelcome] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowWelcome(false);
+    }, 10000); // 10 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
+      {showWelcome && (
+        <div className="welcome-screen">
+          <div className="welcome-content">
+            <p>WELCOME</p>
+
+            <h1>Welcome to My Portfolio</h1>
+
+            <span>
+              Vignesh • Java Full Stack Developer
+            </span>
+          </div>
+        </div>
+      )}
+
       <Navbar />
       <Home />
       <About />
-      <Skills/>
+      <Skills />
       <Projects />
       <Education />
-      <Achievements/>
+      <Achievements />
       <Contact />
-      <Footer/>
-
+      <Footer />
     </>
   );
 }
