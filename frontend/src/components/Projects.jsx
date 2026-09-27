@@ -12,8 +12,8 @@ function Projects() {
           <h2>Projects</h2>
 
           <p className="section-description">
-            Practical full-stack applications built using
-            Java, Spring Boot, React and PostgreSQL.
+            Real-world projects built using modern web technologies
+  and full-stack development tools.
           </p>
         </div>
 
