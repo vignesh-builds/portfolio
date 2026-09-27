@@ -13,7 +13,7 @@ function Projects() {
 
           <p className="section-description">
             Real-world projects built using modern web technologies
-  and full-stack development tools.
+            and full-stack development tools.
           </p>
         </div>
 
@@ -51,51 +51,6 @@ function Projects() {
 
               <a
                 href="https://hospital-frontend-7jfj.onrender.com"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn"
-              >
-                Live Demo
-              </a>
-
-            </div>
-
-          </div>
-
-
-          {/* Project 2 */}
-          <div className="project-card">
-
-            <span className="project-number">02</span>
-
-            <h3>Personal Developer Portfolio</h3>
-
-            <p>
-              A responsive portfolio website showcasing my
-              skills, projects, education and achievements
-              as a Java Full Stack Developer.
-            </p>
-
-            <div className="project-tech">
-              <span>React</span>
-              <span>JavaScript</span>
-              <span>CSS</span>
-              <span>Vite</span>
-            </div>
-
-            <div className="project-links">
-
-              <a
-                href="https://github.com/vignesh-builds/portfolio"
-                target="_blank"
-                rel="noreferrer"
-                className="project-btn"
-              >
-                GitHub
-              </a>
-
-              <a
-                href="https://portfolio-frontend-evvl.onrender.com"
                 target="_blank"
                 rel="noreferrer"
                 className="project-btn"
