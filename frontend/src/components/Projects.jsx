@@ -86,7 +86,7 @@ function Projects() {
             <div className="project-links">
 
               <a
-                href="https://github.com/vignesh-builds"
+                href="https://github.com/vignesh-builds/portfolio"
                 target="_blank"
                 rel="noreferrer"
                 className="project-btn"
