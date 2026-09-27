@@ -3,51 +3,72 @@ import "./Home.css";
 function Home() {
   return (
     <section className="hero" id="home">
-      <div className="hero-content">
 
-        <p className="hero-small">Hi, I'm</p>
+      <div className="hero-container">
 
-        <h1>Vignesh</h1>
+        {/* LEFT CONTENT */}
+        <div className="hero-content">
 
-        <h2>
-          Java <span>Full Stack Developer</span>
-        </h2>
+          <p className="hero-small">Hi, I'm</p>
 
-        <p className="hero-description">
-          I build full-stack web applications using Java, Spring Boot,
-          React and PostgreSQL, with a focus on clean backend development
-          and responsive user experiences.
-        </p>
+          <h1>Vignesh</h1>
 
-        <div className="hero-buttons">
+          <h2>
+            Java <span>Full Stack Developer</span>
+          </h2>
 
-          <a href="#projects" className="primary-btn">
-            View Projects
-          </a>
+          <p className="hero-description">
+            I build full-stack web applications using Java, Spring Boot,
+            React and PostgreSQL, with a focus on clean backend development
+            and responsive user experiences.
+          </p>
 
-          <a href="#contact" className="secondary-btn">
-            Contact Me
-          </a>
+          <div className="hero-buttons">
 
-          <a
-            href="/Vignesh-Resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="secondary-btn"
-          >
-            Resume
-          </a>
+            <a href="#projects" className="primary-btn">
+              View Projects
+            </a>
+
+            <a href="#contact" className="secondary-btn">
+              Contact Me
+            </a>
+
+            <a
+              href="/Vignesh-Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="secondary-btn"
+            >
+              Resume
+            </a>
+
+          </div>
+
+          <div className="hero-tech">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>PostgreSQL</span>
+          </div>
 
         </div>
 
-        <div className="hero-tech">
-          <span>Java</span>
-          <span>Spring Boot</span>
-          <span>React</span>
-          <span>PostgreSQL</span>
+        {/* RIGHT PHOTO */}
+        <div className="hero-image">
+
+          <div className="image-circle"></div>
+
+          <img
+            src="/profile.png"
+            alt="Vignesh - Java Full Stack Developer"
+          />
+
+          <div className="image-decoration"></div>
+
         </div>
 
       </div>
+
     </section>
   );
 }
