@@ -1,4 +1,5 @@
-import "./Projects.css"
+import "./Projects.css";
+
 function Projects() {
   return (
     <section className="projects" id="projects">
@@ -15,7 +16,6 @@ function Projects() {
             Java, Spring Boot, React and PostgreSQL.
           </p>
         </div>
-
 
         <div className="projects-grid">
 
@@ -39,15 +39,25 @@ function Projects() {
             </div>
 
             <div className="project-links">
-              <a href="https://github.com/vignesh-builds/hospital-management" 
-              target="_blank"
-              rel="noreferrer" className="project-btn">
+
+              <a
+                href="https://github.com/vignesh-builds/hospital-management"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn"
+              >
                 GitHub
               </a>
 
-              <a href="https://hospital-frontend-7jfj.onrender.com" className="project-btn">
+              <a
+                href="https://hospital-frontend-7jfj.onrender.com"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn"
+              >
                 Live Demo
               </a>
+
             </div>
 
           </div>
@@ -58,30 +68,41 @@ function Projects() {
 
             <span className="project-number">02</span>
 
-            <h3>E-Commerce Web Application</h3>
+            <h3>Personal Developer Portfolio</h3>
 
             <p>
-              A full-stack e-commerce application for browsing
-              products, managing a shopping cart and placing orders.
+              A responsive portfolio website showcasing my
+              skills, projects, education and achievements
+              as a Java Full Stack Developer.
             </p>
 
             <div className="project-tech">
-              <span>Java</span>
-              <span>Spring Boot</span>
               <span>React</span>
-              <span>PostgreSQL</span>
+              <span>JavaScript</span>
+              <span>CSS</span>
+              <span>Vite</span>
             </div>
 
             <div className="project-links">
-              <a href="https://github.com/vignesh-builds" 
-              target="_blank"
-              rel="noreferrer" className="project-btn">
+
+              <a
+                href="https://github.com/vignesh-builds"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn"
+              >
                 GitHub
               </a>
 
-              <a href="#" className="project-btn">
+              <a
+                href="https://portfolio-frontend-evvl.onrender.com"
+                target="_blank"
+                rel="noreferrer"
+                className="project-btn"
+              >
                 Live Demo
               </a>
+
             </div>
 
           </div>
