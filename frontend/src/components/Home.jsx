@@ -58,7 +58,7 @@ function Home() {
           <div className="image-circle"></div>
 
           <img
-            src="/profile.png"
+            src="/profile.jpeg"
             alt="Vignesh"
           />
 
