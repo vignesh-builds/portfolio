@@ -55,16 +55,14 @@ function Home() {
 
         {/* RIGHT PHOTO */}
         <div className="hero-image">
-
           <div className="image-circle"></div>
 
           <img
             src="/profile.png"
-            alt="Vignesh - Java Full Stack Developer"
+            alt="Vignesh"
           />
 
           <div className="image-decoration"></div>
-
         </div>
 
       </div>
