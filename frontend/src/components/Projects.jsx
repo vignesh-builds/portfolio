@@ -45,7 +45,7 @@ function Projects() {
                 GitHub
               </a>
 
-              <a href="#" className="project-btn">
+              <a href="https://hospital-frontend-7jfj.onrender.com" className="project-btn">
                 Live Demo
               </a>
             </div>
