@@ -59,7 +59,7 @@ function Home() {
           <div className="image-circle"></div>
 
           <img
-            src="/profile.jpeg"
+            src="/profile.png"
             alt="Vignesh - Java Full Stack Developer"
           />
 
