@@ -1,0 +1,28 @@
+.skill-rows {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.skill-row {
+  padding: 26px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.skill-row:hover { border-color: var(--accent); box-shadow: 0 10px 30px rgba(43, 75, 242, 0.1); }
+
+.skill-row h3 {
+  margin-bottom: 16px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.skill-row .chip { background: var(--surface); }
+
+@media (max-width: 960px) { .skill-rows { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .skill-rows { grid-template-columns: minmax(0, 1fr); } }

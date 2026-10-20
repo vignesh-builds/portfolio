@@ -1,0 +1,20 @@
+.education-container{max-width:var(--max);margin:auto}
+.education-card{
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:40px;
+  padding:35px;
+}
+.education-year{color:var(--accent);font-size:.9rem;font-weight:700}
+.education-content h3{margin:0 0 10px;font-size:1.4rem}
+.education-content h4{margin:0 0 18px;color:#b6c1cf;font-size:1rem;font-weight:600}
+.education-content p{margin:0;max-width:700px;color:var(--muted);line-height:1.75}
+.education-focus{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.education-focus span{
+  padding:7px 12px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  color:#b9c5d4;
+  font-size:.82rem;
+}
+@media(max-width:768px){.education-card{grid-template-columns:1fr;gap:15px}}

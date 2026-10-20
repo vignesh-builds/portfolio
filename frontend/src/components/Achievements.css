@@ -1,0 +1,23 @@
+.ach-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+
+.ach-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+
+.ach-item h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.25; }
+.ach-item p { color: var(--ink-2); }
+.ach-item .text-link { display: inline-block; margin-top: 12px; }
+
+/* The first item (LeetCode) is the strongest proof, so it spans the row */
+.ach-item:first-child { grid-column: 1 / -1; background: var(--night); border-color: var(--night); }
+.ach-item:first-child h3 { color: #fff; }
+.ach-item:first-child p { color: var(--on-night-2); font-size: 1.1rem; max-width: 60ch; }
+.ach-item:first-child .text-link { color: var(--accent-on-night); }
+
+@media (max-width: 760px) { .ach-list { grid-template-columns: minmax(0, 1fr); } }
