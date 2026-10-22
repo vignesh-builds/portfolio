@@ -63,6 +63,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .wrap { max-width: var(--max); margin: 0 auto; padding-inline: var(--gut); }
 .section { padding-block: clamp(36px, 5vw, 56px); scroll-margin-top: 80px; }
 .section--band { background: var(--bg-2); border-block: 1px solid var(--line-soft); }
+.section--band > .section { padding-block: clamp(36px, 5vw, 56px); }
 .muted { color: var(--muted); }
 
 /* ---------- Buttons ---------- */
@@ -141,8 +142,8 @@ button, input, textarea { font: inherit; color: inherit; }
 .sec-icon { display: inline-grid; place-items: center; color: var(--gold-text); padding-bottom: 6px; border-bottom: 2px solid var(--gold); }
 .sec-head--inline { margin-bottom: 0; }
 
-.about-text { display: grid; gap: 12px; color: var(--muted); font-size: 0.97rem; max-width: 56ch; }
-.meta-row { margin-top: 26px; display: grid; gap: 14px; }
+.about-text { display: grid; gap: 12px; color: var(--muted); font-size: 0.97rem; max-width: 70ch; }
+.meta-row { margin-top: 26px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 24px; }
 .meta-row li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.84rem; }
 
 .meta-row svg { color: var(--gold-text); flex: none; margin-top: 2px; }
@@ -211,13 +212,13 @@ button, input, textarea { font: inherit; color: inherit; }
 .m-form span { height: 18px; width: 40%; border-radius: 999px; background: var(--gold); }
 
 /* ---------- Education / achievements ---------- */
-.stack { display: grid; gap: 14px; }
+.stack { display: grid; gap: 14px; max-width: 860px; }
 .edu-card { display: flex; align-items: center; gap: 20px; padding: 18px 22px; }
 .edu-card h3 { font-size: 1.02rem; font-weight: 500; }
 .edu-card p { font-size: 0.86rem; color: var(--muted); }
 .edu-card .edu-period { margin-top: 2px; color: var(--text); }
 .edu-card .edu-note { margin-top: 6px; }
-.ach-list { display: grid; gap: 12px; }
+.ach-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .ach { display: flex; gap: 14px; padding: 14px 18px; }
 .ach > svg { flex: none; margin-top: 3px; color: var(--gold-text); }
 .ach h3 { font-size: 0.98rem; font-weight: 500; }
@@ -265,6 +266,8 @@ button, input, textarea { font: inherit; color: inherit; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1100px) {
+  .meta-row { grid-template-columns: 1fr; }
+  .ach-list { grid-template-columns: 1fr; }
   .skill-grid { grid-template-columns: repeat(2, 1fr); }
   .duo { grid-template-columns: 1fr; }
 }

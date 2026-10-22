@@ -17,14 +17,22 @@ function App() {
       <Navbar />
       <main id="main">
         <Home />
-        <div className="wrap duo section">
+        <div className="wrap section">
           <About />
-          <Skills />
+        </div>
+        <div className="section--band">
+          <div className="wrap section">
+            <Skills />
+          </div>
         </div>
         <Projects />
-        <div className="wrap duo section">
+        <div className="wrap section">
           <Education />
-          <Achievements />
+        </div>
+        <div className="section--band">
+          <div className="wrap section">
+            <Achievements />
+          </div>
         </div>
         <Contact />
       </main>

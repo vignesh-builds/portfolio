@@ -8,6 +8,7 @@ const links = [
   { id: "skills", label: "Skills" },
   { id: "projects", label: "Projects" },
   { id: "education", label: "Education" },
+  { id: "achievements", label: "Achievements" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -64,9 +65,6 @@ function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href={profile.resume} download className="btn btn--outline btn--small nav-resume-mobile">
-            <Icon name="download" size={16} /> Download Resume
-          </a>
         </nav>
 
         <div className="nav-actions">
@@ -78,9 +76,6 @@ function Navbar() {
           >
             <Icon name={theme === "dark" ? "moon" : "sun"} size={20} />
           </button>
-          <a href={profile.resume} download className="btn btn--outline btn--small nav-resume">
-            <Icon name="download" size={16} /> Download Resume
-          </a>
           <button
             type="button"
             className="icon-btn menu-button"
