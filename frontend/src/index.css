@@ -218,6 +218,8 @@ button, input, textarea { font: inherit; color: inherit; }
 .plink:hover { color: var(--gold-text); }
 .plink--gold { color: var(--gold-text); }
 .muted-note { font-size: 0.82rem; color: var(--muted); }
+.project-view { padding: 0; min-height: 0; }
+.shot { width: 100%; aspect-ratio: 12 / 7; object-fit: cover; }
 
 /* App preview mockups (decorative) */
 .browser { width: 100%; max-width: 310px; align-self: end; background: #0c0a07; border: 1px solid var(--line); border-bottom: 0; border-radius: 10px 10px 0 0; overflow: hidden; box-shadow: 0 20px 44px rgba(0, 0, 0, 0.5); color: #f6f2e8; }
