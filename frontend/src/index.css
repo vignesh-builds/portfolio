@@ -125,7 +125,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .edu-badge strong { color: var(--text); font-weight: 600; font-size: 0.88rem; }
 .edu-badge-year { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; }
 
-.stats { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line-soft); border-radius: var(--radius); background: rgba(255, 255, 255, 0.02); margin-bottom: 30px; }
+.stats { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line-soft); border-radius: var(--radius); background: var(--bg); margin-bottom: 30px; }
 .stat { display: flex; flex-direction: column-reverse; padding: 14px 20px; border-right: 1px solid var(--line-soft); }
 .stat:last-child { border-right: 0; }
 .stat dd { font-family: var(--display); font-size: 1.7rem; font-weight: 600; color: var(--gold-text); line-height: 1.1; }
