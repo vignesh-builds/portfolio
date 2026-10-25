@@ -75,7 +75,7 @@ export const skills = [
 export const projects = [
   {
     title: "CarePoint",
-    image: "/carepoint.png",
+    image: "/carepoint.jpg",
     type: "Personal project",
     kind: "hospital",
     tone: "blue",
@@ -105,7 +105,7 @@ export const projects = [
     // EDIT: I wrote this description from the project name only.
     // Change the points, stack and links so they match what you actually built.
     title: "ShopEasy",
-    image: "/shopeasy.png",
+    image: "/shopeasy.jpg",
     type: "Personal project",
     kind: "shop",
     tone: "sun",
