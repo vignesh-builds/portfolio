@@ -8,7 +8,7 @@ const hospitalRows = [
 ];
 const shopItems = ["₹499", "₹1,299", "₹799", "₹249"];
 
-// Decorative app preview drawn with plain markup (no images needed)
+// Decorative app preview drawn with plain markup (used only when a project has no image)
 function Mock({ kind }) {
   return (
     <div className="browser" aria-hidden="true">
@@ -67,7 +67,11 @@ function Projects() {
           {projects.map((p) => (
             <article className="card project" key={p.title}>
               <div className="project-view">
-                <Mock kind={p.kind} />
+                {p.image ? (
+                  <img className="shot" src={p.image} alt={`${p.title} preview`} loading="lazy" />
+                ) : (
+                  <Mock kind={p.kind} />
+                )}
               </div>
               <div className="project-main">
                 <h3>{p.title}</h3>
