@@ -1,0 +1,15 @@
+# Dependencies / build output
+frontend/node_modules/
+frontend/dist/
+backend/target/
+
+# Secrets (keep the *.example files)
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
