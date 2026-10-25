@@ -59,7 +59,7 @@ function Contact() {
             <li>
               <Icon name="mail" size={22} />
               <b>Email</b>
-              <a href={`mailto:${profile.email}`}>{profile.email}</a>
+              <a href={profile.emailLink} target="_blank" rel="noreferrer">{profile.email}</a>
             </li>
             <li>
               <Icon name="linkedin" size={22} />
@@ -150,7 +150,7 @@ function Contact() {
             {status === "error" && (
               <p className="form-status--error">
                 Your message was not sent. Please try again, or email{" "}
-                <a href={`mailto:${profile.email}`}>{profile.email}</a>.
+                <a href={profile.emailLink} target="_blank" rel="noreferrer">{profile.email}</a>.
               </p>
             )}
           </div>

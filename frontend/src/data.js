@@ -6,10 +6,12 @@
 export const profile = {
   name: "S. Vignesh",
   firstName: "Vignesh",
-  location: "Thanjavur (Preferred)",
+  location: "Thiruvarur · Open to relocate anywhere & remote",
   role: "Java Full Stack Developer",
   email: "vignesh.builds@gmail.com",
-  resume: "/Vignesh-Resume.pdf",
+  emailLink:
+    "https://mail.google.com/mail/?view=cm&fs=1&to=vignesh.builds@gmail.com",
+  resume: "/Resume.pdf",
   github: {
     label: "github.com/vignesh-builds",
     url: "https://github.com/vignesh-builds",
@@ -27,7 +29,7 @@ export const profile = {
 // Quick-scan numbers shown right under the hero
 export const stats = [
   { value: "130+", label: "LeetCode problems solved" },
-  { value: "3", label: "Full-stack apps built" },
+  { value: "2", label: "Full-stack apps built" },
   { value: "1st", label: "Place in coding and debugging contests" },
   { value: "2027", label: "B.E. Computer Science graduate" },
 ];
@@ -49,7 +51,13 @@ export const skills = [
   {
     group: "Backend",
     icon: "coffee",
-    items: ["Java", "Spring Boot", "Spring Security", "REST APIs", "JPA / Hibernate"],
+    items: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "REST APIs",
+      "JPA / Hibernate",
+    ],
   },
   {
     group: "Frontend",
@@ -66,7 +74,7 @@ export const skills = [
 
 export const projects = [
   {
-    title: "Hospital Appointment Management System",
+    title: "CarePoint",
     type: "Personal project",
     kind: "hospital",
     tone: "blue",
@@ -108,25 +116,16 @@ export const projects = [
       "Designed the PostgreSQL schema for users, products and orders.",
       "Created a responsive React storefront with product listing, cart and checkout screens.",
     ],
-    stack: ["Java", "Spring Boot", "Spring Security", "React", "PostgreSQL", "Maven"],
+    stack: [
+      "Java",
+      "Spring Boot",
+      "Spring Security",
+      "React",
+      "PostgreSQL",
+      "Maven",
+    ],
     // Add your links when ready, e.g.
     // { label: "View code on GitHub", url: "https://github.com/..." }
-    links: [],
-  },
-  {
-    title: "Personal developer portfolio",
-    type: "Personal project (this website)",
-    kind: "site",
-    tone: "ink",
-    flow: ["React", "Spring Boot REST API", "PostgreSQL"],
-    summary:
-      "A responsive portfolio with a contact form that saves messages through a Spring Boot and PostgreSQL backend.",
-    points: [
-      "Built reusable React components for each section of the site.",
-      "Created a Spring Boot REST endpoint that stores contact messages in PostgreSQL.",
-      "Used a mobile-first layout so the site works on phones, tablets and desktops.",
-    ],
-    stack: ["React", "Spring Boot", "PostgreSQL", "CSS", "Git"],
     links: [],
   },
 ];
@@ -136,10 +135,8 @@ export const education = [
     period: "2023 – 2027",
     title: "B.E. Computer Science and Engineering",
     place: "Anjalai Ammal Mahalingam Engineering College",
-    note: "Currently in 4th year (7th semester), with a focus on Java, backend and full-stack development.",
   },
   {
-    period: "Schooling",
     title: "Higher Secondary Education",
     place: "V S Boys Higher Secondary School, Thiruvarur",
     note: "",
@@ -162,6 +159,6 @@ export const achievements = [
   },
   {
     title: "Typewriting examinations",
-    text: "Junior level: First Class. Senior level: Distinction with First Class.",
+    text: "Junior level : First Class,  Senior level : Distinction with First Class.",
   },
 ];

@@ -23,7 +23,7 @@ function About() {
           <Icon name="mail" size={26} />
           <div>
             <b>Email</b>
-            <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            <a href={profile.emailLink} target="_blank" rel="noreferrer">{profile.email}</a>
           </div>
         </li>
         <li>

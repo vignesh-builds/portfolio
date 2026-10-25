@@ -99,7 +99,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .hero-shapes { position: absolute; inset: 0; pointer-events: none; background:
   linear-gradient(115deg, transparent 0 8%, rgba(245, 181, 46, 0.1) 8% 9%, transparent 9%),
   linear-gradient(115deg, transparent 0 28%, rgba(245, 181, 46, 0.06) 28% 29%, transparent 29%); }
-.hero-laptop { position: absolute; top: 0; right: 0; bottom: 0; width: min(36%, 480px); background: url("/hero-bg.jpg") center / cover no-repeat; opacity: 0.9; -webkit-mask-image: linear-gradient(90deg, transparent, #000 45%); mask-image: linear-gradient(90deg, transparent, #000 45%); }
+.hero-laptop { position: absolute; top: 0; right: 0; bottom: 0; width: min(40%, 560px); background: url("/hero-bg.jpg") 100% center / cover no-repeat; opacity: 1; -webkit-mask-image: linear-gradient(90deg, transparent, #000 25%); mask-image: linear-gradient(90deg, transparent, #000 25%); }
 :root[data-theme="light"] .hero-laptop { opacity: 0.25; }
 .hero-inner { position: relative; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 24px; padding-block: clamp(40px, 5vw, 64px) 36px; }
 .hello { font-family: var(--display); font-weight: 300; font-size: clamp(1.2rem, 2vw, 1.6rem); color: var(--gold-text); }

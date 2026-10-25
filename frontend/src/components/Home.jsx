@@ -4,7 +4,7 @@ import { Icon } from "./Deco";
 const socials = [
   { label: "GitHub", icon: "github", url: profile.github.url },
   { label: "LinkedIn", icon: "linkedin", url: profile.linkedin.url },
-  { label: "Email", icon: "mail", url: `mailto:${profile.email}` },
+  { label: "Email", icon: "mail", url: profile.emailLink },
 ];
 
 function Home() {
