@@ -114,11 +114,11 @@ button, input, textarea { font: inherit; color: inherit; }
 .hero-socials a:hover { color: var(--gold-text); transform: translateY(-2px); }
 
 .hero-visual { position: relative; min-height: 360px; display: flex; flex-direction: column; align-items: center; }
-   .photo-ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: top; border: 4px solid var(--bg); }
-.photo-ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 4px solid var(--bg); }
+.photo-ring { width: clamp(190px, 20vw, 250px); aspect-ratio: 1; border-radius: 50%; padding: 5px; background: conic-gradient(from 200deg, var(--gold), #7a5410, var(--gold-2), #7a5410, var(--gold)); box-shadow: 0 0 60px -10px var(--glow); }
+.photo-ring img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: top; border: 4px solid var(--bg); }
 .script { position: absolute; top: 16px; left: 2%; font-family: var(--script); font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.05; color: var(--text); transform: rotate(-8deg); }
 .script::after { content: ""; display: block; width: 78px; height: 3px; margin-top: 8px; border-radius: 3px; background: var(--gold); transform: rotate(-8deg); }
-.edu-badge { position: relative; margin-top: -18px; width: min(100%, 400px); display: flex; align-items: center; gap: 16px; padding: 14px 20px; border: 1px solid var(--line); border-radius: 12px; background: rgba(10, 9, 8, 0.82); backdrop-filter: blur(8px); }
+.edu-badge { position: relative; margin-top: 20px; width: min(100%, 400px); display: flex; align-items: center; gap: 16px; padding: 14px 20px; border: 1px solid var(--line); border-radius: 12px; background: rgba(10, 9, 8, 0.82); backdrop-filter: blur(8px); }
 :root[data-theme="light"] .edu-badge { background: rgba(255, 255, 255, 0.9); }
 .edu-badge svg { color: var(--gold-text); flex: none; }
 .edu-badge div { display: grid; gap: 2px; font-size: 0.82rem; color: var(--muted); }
