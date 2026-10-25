@@ -197,7 +197,14 @@ button, input, textarea { font: inherit; color: inherit; }
 
 /* ---------- Projects ---------- */
 .row-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
-.project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+  gap: 20px;
+}
+.project { height: 100%; }
 .project { display: flex; flex-direction: column; overflow: hidden; transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s; }
 .project:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: 0 18px 40px -22px var(--glow); }
 .project-view { display: grid; place-items: center; padding: 18px 18px 0; min-height: 190px; background: radial-gradient(120% 100% at 50% 0%, #2a2008 0%, #0c0a07 75%); border-bottom: 1px solid var(--line-soft); overflow: hidden; }
