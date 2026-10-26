@@ -75,7 +75,7 @@ export const skills = [
 export const projects = [
   {
     title: "CarePoint",
-    image: "/carepoint.jpg",
+    image: "carepoint.jpg",
     type: "Personal project",
     kind: "hospital",
     tone: "blue",
