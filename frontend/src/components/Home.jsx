@@ -54,7 +54,9 @@ function Home() {
 
         <div className="hero-visual rise" style={{ "--d": "160ms" }}>
           <div className="photo-ring">
-            <img src="/profile.jpg" alt={`Portrait of ${profile.name}`} width="260" height="260" />
+            <div className="photo-frame">
+              <img src="/profile.jpg" alt={`Portrait of ${profile.name}`} width="260" height="260" />
+            </div>
           </div>
           <p className="script" aria-hidden="true">
             Code<br />Build<br />Grow
