@@ -116,35 +116,46 @@ button, input, textarea { font: inherit; color: inherit; }
 .hero-visual { position: relative; min-height: 360px; display: flex; flex-direction: column; align-items: center; }
 .photo-ring {
   position: relative;
+  isolation: isolate;
   width: clamp(190px, 20vw, 250px);
   aspect-ratio: 1;
   border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 30px 0 var(--glow);
-  animation: ring-glow 3s ease-in-out infinite;
+  padding: 9px;               /* ring thickness (6px) + dark gap (3px) */
 }
-.photo-ring img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 14%;
-  transform: scale(2.1);
-  transform-origin: 50% 20%;
-  background: #fff;
-}
+/* rotating gold ring, sits behind the photo */
+.photo-ring::before,
 .photo-ring::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: -1;
   border-radius: 50%;
-  padding: 6px;
   background: conic-gradient(from var(--angle), var(--gold), #7a5410, var(--gold-2), #7a5410, var(--gold));
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
   animation: ring-spin 5s linear infinite;
+}
+/* soft glow: blurred copy of the same ring, rotates with it and pulses */
+.photo-ring::after {
+  inset: -3px;
+  filter: blur(16px);
+  animation: ring-spin 5s linear infinite, ring-glow 3s ease-in-out infinite;
+}
+.photo-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 0 3px var(--bg);   /* gap between ring and photo */
+}
+.photo-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  transform-origin: 50% 35%;          /* face position in the photo */
+  transform: translateY(10%) scale(1.7);  /* translateY = move face down, scale = zoom */
 }
 .script { position: absolute; top: 16px; left: 2%; font-family: var(--script); font-size: clamp(1.5rem, 2.4vw, 2.1rem); line-height: 1.05; color: var(--text); transform: rotate(-8deg); }
 .script::after { content: ""; display: block; width: 78px; height: 3px; margin-top: 8px; border-radius: 3px; background: var(--gold); transform: rotate(-8deg); }
@@ -307,8 +318,8 @@ button, input, textarea { font: inherit; color: inherit; }
 }
 @keyframes ring-spin { to { --angle: 560deg; } }
 @keyframes ring-glow {
-  0%, 100% { box-shadow: 0 0 30px 0 var(--glow); }
-  50%      { box-shadow: 0 0 70px 10px color-mix(in srgb, var(--gold) 60%, transparent); }
+  0%, 100% { opacity: 0.35; }
+  50%      { opacity: 0.85; }
 }
 .rise { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: var(--d, 0ms); }
 @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
@@ -355,6 +366,6 @@ button, input, textarea { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .rise { animation: none; }
-  .photo-ring, .photo-ring::after { animation: none; }
+  .photo-ring::before, .photo-ring::after { animation: none; }
   .btn, .project { transition: none; }
 }
