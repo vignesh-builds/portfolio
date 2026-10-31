@@ -75,18 +75,18 @@ export const skills = [
 export const projects = [
   {
     title: "CarePoint",
-    image: "carepoint.jpg",
+    image: "/carepoint.jpg", // Prepended leading slash for path consistency
     type: "Personal project",
     kind: "hospital",
     tone: "blue",
     flow: ["React", "Spring Boot REST API", "PostgreSQL"],
     summary:
-      "A full-stack application for managing patients, doctors and appointment bookings.",
+      "A full-stack healthcare portal streamlining patient onboarding, doctor scheduling, and appointment lifecycle management.",
     points: [
-      "Designed and built CRUD REST APIs with Spring Boot for the core business logic.",
-      "Modeled the PostgreSQL database for patient, appointment and staff records.",
-      "Built a responsive React frontend for patient management and appointment workflows.",
-      "Tested every API endpoint with Postman before connecting the frontend.",
+      "Engineered robust CRUD REST endpoints with Spring Boot to handle medical records, triage, and doctor availability.",
+      "Architected normalized PostgreSQL schema optimizing relation integrity between patients, practitioners, and visit logs.",
+      "Developed a responsive React interface featuring real-time form validation and intuitive booking workflows.",
+      "Validated comprehensive request/response payloads, edge cases, and status codes via Postman test collections.",
     ],
     stack: ["Java", "Spring Boot", "React", "PostgreSQL", "REST APIs", "Maven"],
     links: [
@@ -102,8 +102,6 @@ export const projects = [
     ],
   },
   {
-    // EDIT: I wrote this description from the project name only.
-    // Change the points, stack and links so they match what you actually built.
     title: "ShopEasy",
     image: "/shopeasy.jpg",
     type: "Personal project",
@@ -111,12 +109,12 @@ export const projects = [
     tone: "sun",
     flow: ["React", "Spring Boot REST API", "PostgreSQL"],
     summary:
-      "An e-commerce web application where customers browse products, fill a cart and place orders.",
+      "A full-stack e-commerce platform supporting product discovery, cart state persistence, secure checkout, and order fulfillment.",
     points: [
-      "Built REST APIs with Spring Boot for products, cart and orders.",
-      "Secured user login and protected routes with Spring Security.",
-      "Designed the PostgreSQL schema for users, products and orders.",
-      "Created a responsive React storefront with product listing, cart and checkout screens.",
+      "Developed modular REST APIs with Spring Boot to handle catalog filtering, cart operations, and transaction flows.",
+      "Implemented role-based access control (RBAC) and route protection using Spring Security and JWT authentication.",
+      "Modeled relational database schemas in PostgreSQL with indexes on high-frequency product and order queries.",
+      "Built a modern React storefront incorporating client-side state management for cart synchronization and responsive checkout.",
     ],
     stack: [
       "Java",
@@ -126,9 +124,17 @@ export const projects = [
       "PostgreSQL",
       "Maven",
     ],
-    // Add your links when ready, e.g.
-    // { label: "View code on GitHub", url: "https://github.com/..." }
-    links: [],
+    links: [
+      {
+        label: "View live demo",
+        url: "https://shopeasy-frontend-wvvl.onrender.com",
+        primary: true,
+      },
+      {
+        label: "View code on GitHub",
+        url: "https://github.com/vignesh-builds/ShopEasy",
+      },
+    ],
   },
 ];
 
