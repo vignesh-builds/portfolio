@@ -28,7 +28,7 @@ export const profile = {
 
 // Quick-scan numbers shown right under the hero
 export const stats = [
-  { value: "130+", label: "LeetCode problems solved" },
+  { value: "140+", label: "LeetCode problems solved" },
   { value: "2", label: "Full-stack apps built" },
   { value: "1st", label: "Place in coding and debugging contests" },
   { value: "2027", label: "B.E. Computer Science graduate" },
@@ -154,7 +154,7 @@ export const education = [
 export const achievements = [
   {
     title: "Problem solving on LeetCode",
-    text: "Solved 130+ problems covering arrays, strings, HashMap, stack and queue.",
+    text: "Solved 140+ problems covering arrays, strings, HashMap, stack and queue.",
     link: { label: "View LeetCode profile", url: profile.leetcode.url },
   },
   {
